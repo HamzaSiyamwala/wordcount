@@ -1,0 +1,10 @@
+<h1> wordcount </h1>
+Welcome to word count
+<br>
+<form action="{% url 'count' %}">
+    <textarea name= "fulltextarea" cols="30" rows="10"></textarea>
+    <br/>
+    <input type="submit" value="count" !/>
+</form>
+<br/>
+<a href= "{% url 'about' %} "> About page</a>

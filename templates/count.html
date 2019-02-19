@@ -1,0 +1,12 @@
+<h1>Counted</h1>
+<a href="{% url 'home' %}">Back to Home</a>
+<h2>Text Entered by the user:</h2>
+{{ fulltextarea }}
+<br/>
+
+<h2>Words Counter</h2>
+total words = {{ word_list}}
+<br/>
+{% for word,value in worddict %}<br/>
+{{ word }} = {{ value }}
+{% endfor %}
